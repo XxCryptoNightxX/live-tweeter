@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
+  <!-- External CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <!-- App CSS -->
+  <link href="/styles/layout.css" rel="stylesheet" type="text/css">
+  <link href="/styles/header.css" rel="stylesheet" type="text/css">
+  <link href="/styles/new-tweet.css" rel="stylesheet" type="text/css">
+  <!-- External JS -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script><!-- App JS -->
+
+  <script src="/scripts/client.js" type="text/javascript">
+  </script>
+</head>
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span class="brand"><i class="fab fa-twitter"></i> tweeter</span>
+    <a href="#"><span class="bold">Write</span> a new tweet</a>
+  </nav>
+  <header class="jumbotron">
+    <div class="profil"><img src="https://source.unsplash.com/p0GfJbbGAUc"></div><br>
+    <div>
+      <h2>{undefined}</h2>
+    </div>
+  </header><!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <form>
+        <label for="tweet-text">What are you humming about?</label> 
+        <textarea id="tweet-text" name="text"placeholder="What are you humming about?"></textarea>
+        <div class="new-footer">
+          <button type="submit" class="myButton brand">Tweet</button> <output class="counter" for="tweet-text" name="counter">140</output>
+        </div>
+      </form>
+            <article>
+        <header>
+          <div>
+            <img class="userprofil-img" src="./images/userprofile.png" alt="{userprofil}">
+            <h3>John doe</h3>
+          </div>
+          <div>
+            <a href="#">@JDoe</a>
+          </div>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas vehicula nibh, id elementum lorem consequat quis. Donec volutpat egestas risus, non commodo leo blandit quis. Phasellus pharetra tempor rhoncus. Aliquam et purus velit. Cras laoreet lectus vel semper ullamcorper. Donec luctus nulla purus, sed feugiat ex commodo faucibus. Fusce sed sollicitudin orci. Phasellus vehicula augue at sapien porta, in ultricies nisl varius. Mauris luctus tellus nec sem dapibus, sed dictum nisl semper. Mauris volutpat dapibus eros, et tincidunt metus vehicula vel. Praesent euismod finibus lobortis.</p>
+        <hr>
+        <footer>
+          <div class="time">10 Mins ago</div>
+          <ul>
+            <li><a href="#"><i class="fas fa-flag"></i></a></li>
+            <li><a href="#"><i class="fas fa-retweet"></i></a></li>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          </ul>
+        </footer>
+      </article>
+      <article>
+        <header>
+          <div>
+            <img src="" alt="{userprofil}">
+            <h3>{username}</h3>
+          </div>
+          <div>
+            <a href="#">{@userhandle}</a>
+          </div>
+        </header>
+        <p>{text-ID}</p>
+        <hr>
+        <footer>
+          <div class="time">{timestamp}</div>
+          <ul>
+            <li><a href="#"><i class="fas fa-flag"></i></a></li>
+            <li><a href="#"><i class="fas fa-retweet"></i></a></li>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          </ul>
+        </footer>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
