@@ -1,11 +1,9 @@
 /*new-tweet.css*/
  .new-tweet {
-  width: auto;
-  margin: 2em;
+  width: 100%;
   background-color: #eee;
   border: 1px solid gray;
   border-radius: 8px;
-  padding: 10px;
 }
  .new-tweet h2 {
   text-align: left;

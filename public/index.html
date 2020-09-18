@@ -8,16 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <!-- App CSS -->
-  <link href="/styles/layout.css" rel="stylesheet" type="text/css">
-  <link href="/styles/header.css" rel="stylesheet" type="text/css">
-  <link href="/styles/new-tweet.css" rel="stylesheet" type="text/css">
+  <link href="./styles/layout.css" rel="stylesheet" type="text/css">
+  <link href="./styles/header.css" rel="stylesheet" type="text/css">
+  <link href="./styles/new-tweet.css" rel="stylesheet" type="text/css">
   <!-- External JS -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script><!-- App JS -->
 
-  <script src="/scripts/client.js" type="text/javascript">
+  <script src="./scripts/client.js" type="text/javascript">
   </script>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 </head>
 <body>
   <!-- Top nav bar (fixed) -->
@@ -25,16 +26,18 @@
     <span class="brand"><i class="fab fa-twitter"></i> tweeter</span>
     <a href="#"><span class="bold">Write</span> a new tweet</a>
   </nav>
-  <header class="jumbotron">
-    <div class="profil"><img src="https://source.unsplash.com/p0GfJbbGAUc"></div><br>
-    <div>
-      <h2>{undefined}</h2>
-    </div>
-  </header><!-- Page-specific (main) content here -->
+
+  <!-- Page-specific (main) content here -->
   <main class="container">
+    <header class="jumbotron">
+      <div class="profil"><img src="https://unavatar.now.sh/github/XxCryptoNightxX"></div><br>
+      <div>
+        <h2>XxCryptoNightxX</h2>
+      </div>
+    </header>
     <section class="new-tweet">
       <form>
-        <label for="tweet-text">What are you humming about?</label> 
+        <label for="tweet-text">What are you humming about?</label>
         <textarea id="tweet-text" name="text"placeholder="What are you humming about?"></textarea>
         <div class="new-footer">
           <button type="submit" class="myButton brand">Tweet</button> <output class="counter" for="tweet-text" name="counter">140</output>
@@ -61,7 +64,7 @@
           </ul>
         </footer>
       </article>
-      <article>
+      <!-- <article>
         <header>
           <div>
             <img src="" alt="{userprofil}">
@@ -82,7 +85,7 @@
           </ul>
         </footer>
       </article>
-    </section>
+    </section> -->
   </main>
 </body>
 </html>
