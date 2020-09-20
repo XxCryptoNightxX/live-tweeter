@@ -1,9 +1,10 @@
 /*new-tweet.css*/
  .new-tweet {
-  width: 100%;
+  width: 90%;
   background-color: #eee;
   border: 1px solid gray;
   border-radius: 8px;
+  padding: 10px;
 }
  .new-tweet h2 {
   text-align: left;
@@ -124,6 +125,21 @@ article footer ul{
 article footer ul li{
 	margin: 5px;
 }
+
+.hide {
+  display: none;
+  opacity: 0;
+  color: gray;
+}
+
+article:hover .hide {
+  display: block;
+  opacity: .5;
+}
+article:hover{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
 .userprofil-img{
 	width: 50px;
     height: auto;
@@ -131,4 +147,3 @@ article footer ul li{
 
 }
 
-        

@@ -43,6 +43,30 @@ nav{
     align-content: center;
     align-items: center;
 }
+nav a{
+  text-align: right;
+  position: relative;
+}
+
+nav a::after{
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 20px;
+  animation: bounceArrow 1s infinite linear alternate;
+  background: url("data:image/svg+xml,%3Csvg width='18' fill='%23fff' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-double-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='nav-arrow svg-inline--fa fa-chevron-double-down fa-w-14 fa-9x'%3E%3Cpath fill='%23fff' d='M207 477.5L12.7 283.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0l154.7 154 154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 477.5c-9.4 9.3-24.6 9.3-34 0zm34-192L435.3 91.1c9.4-9.4 9.4-24.6 0-33.9l-22.7-22.7c-9.4-9.4-24.5-9.4-33.9 0L224 188.5 69.3 34.5c-9.4-9.3-24.5-9.3-33.9 0L12.7 57.2c-9.4 9.4-9.4 24.6 0 33.9L207 285.5c9.4 9.3 24.6 9.3 34 0z' class=''%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+}
+@keyframes bounceArrow {
+  from {
+    transform: translate(-50%, -3px);
+  }
+  to {
+    transform: translate(-50%, 3px);
+  }
+}
 main{
 	   	display: flex;
     	flex-direction: column;
@@ -62,12 +86,12 @@ main{
     /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
     main{
       flex-direction: row;
-    	justify-content: center;
+      justify-content: center;
+      align-items: flex-start;
     }
     .new-tweet{
     	width: auto;
     	margin: 2em;
-    	padding: 10px;
     }
 
   }

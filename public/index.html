@@ -24,7 +24,11 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span class="brand"><i class="fab fa-twitter"></i> tweeter</span>
-    <a href="#"><span class="bold">Write</span> a new tweet</a>
+    <a href="#" class="add-tweet-btn">
+      <span class="bold">Write</span>
+      a new tweet
+
+    </a>
   </nav>
 
   <!-- Page-specific (main) content here -->
@@ -43,41 +47,44 @@
           <button type="submit" class="myButton brand">Tweet</button> <output class="counter" for="tweet-text" name="counter">140</output>
         </div>
       </form>
-            <article>
-        <header>
-          <div>
-            <img class="userprofil-img" src="./images/userprofile.png" alt="{userprofil}">
-            <h3>John doe</h3>
-          </div>
-          <div>
-            <a href="#">@JDoe</a>
-          </div>
-        </header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas vehicula nibh, id elementum lorem consequat quis. Donec volutpat egestas risus, non commodo leo blandit quis. Phasellus pharetra tempor rhoncus. Aliquam et purus velit. Cras laoreet lectus vel semper ullamcorper. Donec luctus nulla purus, sed feugiat ex commodo faucibus. Fusce sed sollicitudin orci. Phasellus vehicula augue at sapien porta, in ultricies nisl varius. Mauris luctus tellus nec sem dapibus, sed dictum nisl semper. Mauris volutpat dapibus eros, et tincidunt metus vehicula vel. Praesent euismod finibus lobortis.</p>
-        <hr>
-        <footer>
-          <div class="time">10 Mins ago</div>
-          <ul>
-            <li><a href="#"><i class="fas fa-flag"></i></a></li>
-            <li><a href="#"><i class="fas fa-retweet"></i></a></li>
-            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-          </ul>
-        </footer>
-      </article>
+        <section id="tweets-container">
+          <article>
+            <header>
+              <div>
+                <img class="userprofil-img" src="./images/userprofile.png" alt="{userprofil}">
+                <h3>John doe</h3>
+              </div>
+              <div>
+                <a class="hide" href="#">@JDoe</a>
+              </div>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas vehicula nibh, id elementum lorem consequat quis. Donec volutpat egestas risus, non commodo leo blandit quis. Phasellus pharetra tempor rhoncus. Aliquam et purus velit. Cras laoreet lectus vel semper ullamcorper. Donec luctus nulla purus, sed feugiat ex commodo faucibus. Fusce sed sollicitudin orci. Phasellus vehicula augue at sapien porta, in ultricies nisl varius. Mauris luctus tellus nec sem dapibus, sed dictum nisl semper. Mauris volutpat dapibus eros, et tincidunt metus vehicula vel. Praesent euismod finibus lobortis.</p>
+            <hr>
+            <footer>
+              <div class="time">10 Mins ago</div>
+              <ul>
+                <li><a href="#"><i class="fas fa-flag"></i></a></li>
+                <li><a href="#"><i class="fas fa-retweet"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+              </ul>
+            </footer>
+        </article>
+      </section>
+
       <!-- <article>
         <header>
           <div>
-            <img src="" alt="{userprofil}">
-            <h3>{username}</h3>
+            <img src="${avatars}" alt="${name}">
+            <h3>${name}</h3>
           </div>
           <div>
-            <a href="#">{@userhandle}</a>
+            <a href="#">${handle}</a>
           </div>
         </header>
-        <p>{text-ID}</p>
+        <p>${text}</p>
         <hr>
         <footer>
-          <div class="time">{timestamp}</div>
+          <div class="time">${'10 days ago'}</div>
           <ul>
             <li><a href="#"><i class="fas fa-flag"></i></a></li>
             <li><a href="#"><i class="fas fa-retweet"></i></a></li>
